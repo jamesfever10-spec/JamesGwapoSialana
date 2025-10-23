@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumar One";
+  background-color: #0a0000;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.navbar {
+  grid-column: 1/11;
+  width: 100%;
+  background-color: #000;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+.navbar .logo {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ccc;
+}
+
+#menu {
+  display: none;
+  color: rgb(250, 249, 249);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.main {
+  grid-column: 1/11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+  gap: 40px;
+}
+
+.profile-img img { 
+  width: 250px;
+  height: 250px; 
+}
+
+.profile-text ul {
+  list-style: none;
+  text-align: left;
+}
+
+.profile-text li:nth-child(1) {
+  font-size: 2.5rem;
+}
+
+.profile-text li:nth-child(2) {
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 887px) {
+  .navbar {
+    background-color: #080000;
+  }
+  body {
+    background-color: #0b021d;
+  }
+  .main {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  .profile-img img {
+    width: 150px;
+    height: 150px;
+  }
+  .profile-text li:nth-child(1) {
+    font-size: 2rem;
+  }
+  .profile-text li:nth-child(2) {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .navbar {
+    background-color: #100000;
+  }
+  body {
+    background-color: #13052d;
+  }
+  .profile-text li:nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .profile-text li:nth-child(2) {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .navbar {
+    background-color: #180000;
+  }
+  body {
+    background-color: #1c073d;
+  }
+  .profile-text li:nth-child(1) {
+    font-size: 1.4rem;
+  }
+  .profile-text li:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 658px) {
+  .navbar {
+    background-color: #200000;
+  }
+  body {
+    background-color: #24094d;
+  }
+}
+
+@media screen and (max-width: 634px) {
+  .navbar {
+    background-color: #300000;
+  }
+  body {
+    background-color: #2d0b5d;
+  }
+  .navbar ul {
+    display: none;
+  }
+  #menu {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .navbar {
+    background-color: #400000;
+  }
+  body {
+    background-color: #360d6d;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .navbar {
+    background-color: #500000;
+  }
+  body {
+    background-color: #3e0f7d;
+  }
+  .profile-img img {
+    width: 130px;
+    height: 130px;
+  }
+  .profile-text li:nth-child(1) {
+    font-size: 1.4rem;
+  }
+  .profile-text li:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 334px) {
+  .navbar {
+    background-color: #600000;
+  }
+   .profile-img img {
+    width: 100px;
+    height: 100px;
+  }
+   .profile-text li:nth-child(1) {
+    font-size: 1rem;
+  }
+  .profile-text li:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .navbar {
+    background-color: #700000;
+  }
+  .profile-img img {
+    width: 100px;
+    height: 100px;
+  }
+  body {
+    background-color: #47118d;
+  }
+   .profile-text li:nth-child(1) {
+    font-size: 1rem;
+  }
+  .profile-text li:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
