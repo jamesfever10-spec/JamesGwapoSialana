@@ -31,26 +31,13 @@
       </div>
     </section>
   </div>
-  <script>
-    const menu = document.getElementById("menu");
-    const navLinks = document.getElementById("nav-links");
+<script>
+  const menu = document.getElementById("menu");
+  const navLinks = document.getElementById("nav-links");
 
-    menu.addEventListener("click", () => {
-      if (navLinks.style.display === "flex") {
-        navLinks.style.display = "none";
-      } else {
-        navLinks.style.display = "flex";
-        navLinks.style.flexDirection = "column";
-        navLinks.style.backgroundColor = "black";
-        navLinks.style.position = "absolute";
-        navLinks.style.top = "60px";
-        navLinks.style.right = "20px";
-        navLinks.style.padding = "10px";
-        navLinks.style.borderRadius = "10px";
-        navLinks.style.textAlign = "center";
-        navLinks.style.gap = "10px";
-      }
-    });
-  </script>
+  menu.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 </body>
 </html>
