@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Kumar+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
   <div class="grid-container">
@@ -25,32 +25,23 @@
       </div>
       <div class="profile-text">
         <ul>
-          <li>Hi! I'm James Sialana</li>
-          <li>BSIT 3rd Year Student</li>
+          <li>Contact Me:</li>
+          <li>📱 09625476045</li>
+          <li><a href="https://mail.google.com/mail/u/2/#inbox?compose=new">🌐 jamesfever10@gmail.com</a></li>
+          <li><a href=" https://www.facebook.com/jameslife.sialana">🅕 James Sialana</a></li>
+          <li><a href="https://www.instagram.com/_________s_e_m_a_j__________?igsh=MTg4MXV3amFlcHh3Ng==">📷 @sejames.gwapo</a></li>
         </ul>
       </div>
     </section>
   </div>
-  <script>
-    const menu = document.getElementById("menu");
-    const navLinks = document.getElementById("nav-links");
+<script>
+  const menu = document.getElementById("menu");
+  const navLinks = document.getElementById("nav-links");
 
-    menu.addEventListener("click", () => {
-      if (navLinks.style.display === "flex") {
-        navLinks.style.display = "none";
-      } else {
-        navLinks.style.display = "flex";
-        navLinks.style.flexDirection = "column";
-        navLinks.style.backgroundColor = "black";
-        navLinks.style.position = "absolute";
-        navLinks.style.top = "60px";
-        navLinks.style.right = "20px";
-        navLinks.style.padding = "10px";
-        navLinks.style.borderRadius = "10px";
-        navLinks.style.textAlign = "center";
-        navLinks.style.gap = "10px";
-      }
-    });
-  </script>
+  menu.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 </body>
 </html>
+
